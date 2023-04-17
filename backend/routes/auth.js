@@ -47,7 +47,7 @@ router.post("/login", async (req, res) => {
             },
             process.env.JWT_SECRET_KEY,
             {
-                expiresIn: "3d"
+                expiresIn: "30d"
             }
         )
 

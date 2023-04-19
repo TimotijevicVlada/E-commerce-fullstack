@@ -9,6 +9,7 @@ const path = require("path");
 const userRoute = require("./routes/user");
 const authRoute = require("./routes/auth");
 const productRoute = require("./routes/product");
+const cartRoute = require("./routes/cart");
 
 dotenv.config();
 app.use(express.json());
@@ -26,6 +27,7 @@ mongoose.connect(process.env.MONGO_URL, {
 app.use("/", authRoute);
 app.use("/", userRoute);
 app.use("/", productRoute);
+app.use("/", cartRoute);
 
 //Port to use
 app.listen(process.env.PORT || 5000, () => {

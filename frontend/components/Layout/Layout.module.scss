@@ -1,0 +1,11 @@
+@import "styles/main.module.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .childrenWrapper {
+        flex: 1;
+    }
+}

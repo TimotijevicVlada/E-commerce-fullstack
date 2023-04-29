@@ -1,0 +1,11 @@
+@import "styles/main.module.scss";
+
+.container {
+    background-color: $color-orange;
+    height: 4rem;
+    @include centerElement;
+
+    @include respond(phone) {
+        background-color: $color-primary;
+    }
+}

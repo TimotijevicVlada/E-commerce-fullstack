@@ -1,0 +1,7 @@
+@import "styles/main.module.scss";
+
+.container {
+    height: 4rem;
+    background-color: $color-orange;
+    @include centerElement;
+}
